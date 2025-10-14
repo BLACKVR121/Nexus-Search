@@ -58,10 +58,6 @@ This tool only queries publicly available information through Google. You are re
 
 To run locally, simply open `index.html` in a web browser. No build process or dependencies required.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Author
 
 **Sakibur Rahman**
