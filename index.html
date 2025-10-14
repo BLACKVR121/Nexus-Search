@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus Search - Find Anything</title>
-    
-    <!-- Tailwind CSS for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <script>
-        // Configuration for Tailwind CSS dark mode
+
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -28,7 +25,6 @@
     </script>
 
     <style>
-        /* Custom styles for a smoother experience */
         body {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -44,7 +40,7 @@
             transform: scale(1.1);
             transition: transform 0.2s ease-in-out;
         }
-        /* Animation for the glowing border effect */
+
         @keyframes tilt {
             0%, 50%, 100% { transform: rotate(0deg); }
             25% { transform: rotate(0.5deg); }
@@ -53,7 +49,7 @@
         .animate-tilt {
             animation: tilt 10s infinite linear;
         }
-        /* Animation for shake on empty search */
+
         @keyframes shake {
             0%, 100% { transform: translateX(0); }
             10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
@@ -63,6 +59,7 @@
             animation: shake 0.5s ease-in-out;
         }
     </style>
+    <link rel="icon" type="image/png" href="icons8-search-48.png">
 </head>
 <body class="bg-gray-900 text-gray-200 font-sans">
 
@@ -70,7 +67,7 @@
         
         <main class="w-full max-w-4xl flex-grow flex flex-col justify-center">
             
-            <!-- Main Title -->
+            
             <div class="text-center mb-10">
                 <h1 class="text-5xl md:text-6xl font-bold text-white tracking-tighter">
                     Nexus Search
@@ -78,16 +75,16 @@
                 <p class="text-gray-400 mt-2 text-lg">Your gateway to open directories.</p>
             </div>
 
-            <!-- Search Form - Improved Design -->
+            
             <form id="searchForm" onsubmit="event.preventDefault(); startSearch();" class="w-full max-w-2xl mx-auto search-container">
                 <input type="hidden" name="fileType" value="" id="fileType">
                 <div class="relative group">
-                    <!-- Glowing background effect -->
+
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full blur opacity-0 group-hover:opacity-75 group-focus-within:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                     
                     <div class="relative flex items-center w-full bg-gray-900/80 backdrop-blur-sm border border-gray-700 rounded-full shadow-2xl p-2 transition-all duration-300">
                         
-                        <!-- File Type Dropdown -->
+                        
                         <div class="relative flex-shrink-0">
                             <button id="ddbutton" type="button" class="flex items-center text-left px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 rounded-full hover:bg-gray-700 focus:outline-none transition-colors duration-200" aria-haspopup="true" aria-expanded="false">
                                 <span id="ddbutton-icon-container" class="flex items-center">
@@ -103,19 +100,19 @@
                                     <a href="#" onclick="setFileType('mkv|mp4|avi|mov|mpg|wmv', 'TV/Movies', 'movies', event)" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem">TV/Movies</a>
                                     <a href="#" onclick="setFileType('mp3|wav|flac|wma|m4a', 'Music', 'music', event)" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem">Music</a>
                                     <a href="#" onclick="setFileType('pdf|epub|mobi', 'Books', 'books', event)" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem">Books</a>
-                                    <a href="#" onclick="setFileType('exe|iso|dmg|zip|rar', 'Software/Games', 'software', event)" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem">Software/Games</a>
+                                    <a href="#" onclick="setFileType('exe|iso|dmg|zip|rar|apk', 'Software/Games', 'software', event)" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem">Software/Games</a>
                                     <a href="#" onclick="setFileType('', 'All Files', 'all', event)" class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" role="menuitem">All Files</a>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Divider -->
+                        
                         <div class="w-px h-6 bg-gray-700 mx-3"></div>
 
-                        <!-- Search Input -->
+                        
                         <input type="text" name="query" id="query" class="flex-grow w-full bg-transparent text-white text-lg px-2 py-1 border-0 focus:ring-0 placeholder-gray-500" placeholder="Search for anything...">
                         
-                        <!-- Search Button -->
+
                         <button type="submit" class="flex-shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white font-bold p-3 rounded-full transition-all duration-200 ml-2 transform hover:scale-110">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -125,7 +122,7 @@
                 </div>
             </form>
 
-            <!-- Content Cards -->
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
                 <div class="card bg-gray-800/40 border border-gray-700 p-6 rounded-2xl">
                     <h3 class="font-semibold text-lg text-white mb-2">What is this?</h3>
@@ -142,7 +139,7 @@
             </div>
         </main>
 
-        <!-- Footer with Social Icons -->
+
         <footer class="w-full max-w-4xl text-center py-6">
             <div class="flex items-center justify-center space-x-6 mb-4">
                 <a href="https://www.facebook.com/sakibur.msr" target="_blank" class="text-gray-400 hover:text-white social-icon"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.59 0 0 .59 0 1.325v21.35C0 23.41.59 24 1.325 24H12.82v-9.29H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h5.713c.735 0 1.325-.59 1.325-1.325V1.325C24 .59 23.41 0 22.675 0z"/></svg></a>
@@ -151,13 +148,13 @@
                 <a href="https://msrsakibur.site" target="_blank" class="text-gray-400 hover:text-white social-icon"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h8a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.881 4.026a9 9 0 11-3.762 15.948M12 12a3 3 0 100-6 3 3 0 000 6z" /></svg></a>
                 <a href="mailto:work.msr01@gmail.com" class="text-gray-400 hover:text-white social-icon"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></a>
             </div>
-            <p class="text-gray-500 text-sm">Created with ❤️ by Sakibur Rahman</p>
+            <p class="text-gray-500 text-sm">Created by Sakibur Rahman</p>
         </footer>
 
     </div>
 
     <script>
-        // --- Search Logic ---
+
         function startSearch() {
             const query = document.getElementById('query').value;
             if (!query) {
@@ -180,7 +177,7 @@
             window.open(url, '_blank');
         }
 
-        // --- Dropdown Logic ---
+
         const icons = {
             movies: `<svg id="ddbutton-icon" class="w-5 h-5 mr-2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" /></svg>`,
             music: `<svg id="ddbutton-icon" class="w-5 h-5 mr-2 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 6l12-3" /></svg>`,
